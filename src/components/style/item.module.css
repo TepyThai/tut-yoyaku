@@ -4,6 +4,14 @@
   border-radius: 5px;
   overflow: hidden;
 }
+
+.container:hover {
+  transform: translate3d(0, -3px, 0);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 .textContainer {
   padding: 16px;
 }
@@ -62,4 +70,11 @@
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+
+.link:hover {
+  color: #094067;
+  background-color: #fffffe;
+  border: 1px solid #094067;
+  transition: all 0.3s ease-in-out;
 }
