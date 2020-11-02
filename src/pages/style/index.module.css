@@ -1,0 +1,23 @@
+.container {
+  background-color: #fffffe;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI,
+    Hiragino Kaku Gothic ProN, Hiragino Sans, ヒラギノ角ゴ ProN W3, Arial,
+    メイリオ, Meiryo, sans-serif;
+}
+.listContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+}

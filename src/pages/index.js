@@ -1,26 +1,22 @@
 import Header from '../components/header';
-import styles from '../styles/styles.module.css';
+import Item from '../components/Item';
+import style from './style/index.module.css';
+import { data } from '../util/index';
 
 export default function Home() {
   return (
-    <div className={styles.hello}>
+    <div className={style.container}>
       <Header />
-      <ul>
-        <li></li>
-      </ul>
+
+      <div className={style.listContainer}>
+        {data && data.length > 0 ? (
+          <ul className={style.itemList}>
+            {data.map((item) => (
+              <Item item={item} />
+            ))}
+          </ul>
+        ) : null}
+      </div>
     </div>
   );
 }
-
-const data = [
-  {
-    name: 'Wireless microphone',
-    imgSrc: '',
-    type: '備品',
-    owner: 'SGU',
-    returnDeadline: '2020/11/19',
-    borrower: '太郎君',
-    status: 'UNAVAILABLE',
-    reference: '',
-  },
-];
